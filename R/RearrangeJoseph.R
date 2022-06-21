@@ -48,9 +48,9 @@ RearrangeJoseph <- function(hc, dis,class,cpp)
 	maxI=res$maxI
 	maxJ=res$maxJ
 	r=res$r
-  write.table(A,file="A.txt")
-	write.table(maxI,file="minI.txt")
-	write.table(maxJ,file="minJ.txt")
+  #write.table(A,file="A.txt")
+	#write.table(maxI,file="minI.txt")
+	#write.table(maxJ,file="minJ.txt")
 	
 	col=which.max(apply(A[node[[ind]]$left,node[[ind]]$right,drop=FALSE],2,max))
 	row=which.max(apply(A[node[[ind]]$left,node[[ind]]$right,drop=FALSE],1,max))

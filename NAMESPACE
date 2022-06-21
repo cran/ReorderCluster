@@ -1,6 +1,13 @@
-useDynLib(ReorderCluster)
+useDynLib(ReorderCluster, .registration=TRUE)
 importFrom(Rcpp, evalCpp)
+importFrom("grDevices", "colorRampPalette", "dev.off", "pdf",
+     "rainbow")
+     importFrom("graphics", "image", "legend")
+     importFrom("stats", "as.dendrogram", "dendrapply", "hclust", "heatmap",
+     "is.leaf", "order.dendrogram", "runif")
+     importFrom("utils", "write.table")
 import(gplots)
+import(gtools)
 export(RearrangeJoseph,
        OrderingJoseph,
        OrderingJosephC,
